@@ -1,0 +1,85 @@
+AVELINE PICTURE – INSTRUKCJA
+============================
+
+1. KALENDARZ REZERWACJI (własny kalendarz + Kalendarz Google w tle)
+-------------------------------------------------------------------
+Klient widzi kalendarz w stylu strony. Wolne terminy liczy mały skrypt Google
+(folder google-apps-script/) na podstawie Twojego Kalendarza Google:
+ - każde wydarzenie w kalendarzu (prywatne, ślub, urlop) blokuje termin
+   razem z buforem na dojazd,
+ - rezerwacja zapisuje się jako wydarzenie w kalendarzu, klient dostaje
+   zaproszenie na e-mail, a Ty powiadomienie,
+ - zajęty termin od razu znika ze strony; dwie osoby nie zajmą tego samego.
+
+Instalacja (ok. 10 minut, na koncie Google fotografki):
+  a) Wejdź na script.google.com → Nowy projekt. Nazwij go "Aveline rezerwacje".
+  b) Skasuj zawartość pliku Code.gs i wklej całą zawartość
+     google-apps-script/Code.gs.
+  c) Na górze pliku ustaw CONFIG: długość sesji, bufor na dojazd,
+     godziny rozpoczęcia w poszczególne dni, maks. sesji dziennie, dni wolne.
+  d) Ustawienia projektu (ikona zębatki) → Strefa czasowa: Europe/Warsaw.
+  e) Wybierz funkcję "test" i kliknij ▶ Uruchom. Google poprosi o zgody
+     (kalendarz, wysyłanie e-maili) – zaakceptuj. Przy ostrzeżeniu
+     "Google nie zweryfikował aplikacji" kliknij Zaawansowane → Przejdź do projektu.
+     W dzienniku zobaczysz listę wolnych terminów.
+  f) Wdróż → Nowe wdrożenie → typ: Aplikacja internetowa.
+     Wykonaj jako: Ja. Kto ma dostęp: Każdy. → Wdróż.
+  g) Skopiuj adres aplikacji (kończy się na /exec).
+  h) W index.html znajdź  data-api-url=""  i wklej adres między cudzysłowy
+     (albo wklej go Claude). Dopóki pole jest puste, kalendarz działa
+     w trybie demonstracyjnym (przykładowe terminy, nic się nie zapisuje).
+
+Zmiana ustawień w CONFIG: po edycji kliknij Wdróż → Zarządzaj wdrożeniami →
+ołówek → Wersja: Nowa wersja → Wdróż. Adres /exec zostaje ten sam.
+Harmonogram spotkań Google (link calendar.app.google) nie jest już potrzebny.
+
+2. ZDJĘCIA
+----------
+Wszystkie zdjęcia w folderze img/ to zaślepki. Podmień je na prawdziwe, zachowując nazwy:
+  hero.jpg, hero-2.jpg, hero-3.jpg – slajdy na górze strony, poziome, min. 2000×1200
+  kafel-sesje.jpg       – okładka "Sesje", pionowa 4:5 (np. 1200×1500)
+  kafel-reportaze.jpg   – okładka "Reportaże", pionowa 4:5
+  o-mnie.jpg            – portret, pionowy 4:5
+  sesje-01..09.jpg      – galeria sesji (dowolne proporcje)
+  reportaze-01..09.jpg  – galeria reportaży
+  og-image.jpg          – obrazek do podglądu linku, 1200×630
+Zdjęcia kompresuj przed wrzuceniem (np. squoosh.app, jakość 75–80, dłuższy bok 1600–2000 px).
+Jeśli proporcje zdjęcia się zmienią, popraw width/height w <img> (albo poproś Claude).
+Więcej zdjęć w galerii: skopiuj linijkę <figure ...> w portfolio.html
+i ustaw data-cat (rodzinne, portretowe, ciazowe, narzeczenskie / sluby, chrzty, eventy, okolicznosciowe).
+
+3. DO UZUPEŁNIENIA (wyszukaj w plikach)
+--------------------------------------
+  kontakt@avelinepicture.pl  – e-mail (index.html, polityka, send.php)
+  +48 000 000 000 / +48000000000 – telefon
+  avelinepicture             – Instagram
+  avelinepicture.pl          – domena (canonical, og, robots.txt, sitemap.xml)
+  ceny                       – index.html (3 kafle) i cennik.html
+
+4. FORMULARZ KONTAKTOWY
+-----------------------
+send.php wysyła wiadomość funkcją mail(). Na OVH działa od razu.
+W send.php ustaw ODBIORCA (gdzie przychodzą wiadomości) i NADAWCA
+(adres w domenie strony, np. formularz@avelinepicture.pl).
+
+5. WRZUCANIE NA SERWER
+----------------------
+Wrzuć całą zawartość folderu (bez tego pliku) do katalogu www na hostingu.
+Po zmianie css/site.css lub js/site.js podbij ?v=20261123 w plikach HTML,
+żeby przeglądarki pobrały nową wersję.
+
+6. EDYCJA PRZEZ AI
+------------------
+Teksty do zmiany są oznaczone atrybutem data-edit="..." – przygotowane pod moduł mcp/
+(edycja strony rozmową z AI), tak jak na d3site.pl.
+
+7. NOWE ELEMENTY (inspirowane stronami innych fotografów)
+--------------------------------------------------------
+  - Zdjęcia wyświetlają się czarno-białe, a po najechaniu myszką pokazują kolor.
+    Możesz więc wgrywać zdjęcia kolorowe. Wyłączenie: usuń class="bw-photos" z <body>.
+  - Opinie (index.html, sekcja #opinie): wklej PRAWDZIWE opinie klientów
+    (np. z Google/Facebooka, za zgodą). Nie publikuj wymyślonych opinii.
+  - Limit ślubów (sekcja Rezerwacja): ustaw prawdziwe liczby w zdaniu
+    "W sezonie biorę tylko 12 ślubów. Na 2027 rok zostało 7 wolnych dat."
+    i aktualizuj je na bieżąco.
+  - Pasek Instagrama nad stopką: 6 zdjęć ze strony z linkiem do profilu.

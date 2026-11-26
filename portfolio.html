@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — sesje zdjęciowe i reportaże | Aveline Picture</title>
+    <meta name="description" content="Portfolio Aveline Picture: sesje rodzinne, portretowe, ciążowe i narzeczeńskie oraz reportaże ze ślubów, chrztów i wydarzeń firmowych.">
+    <link rel="canonical" href="https://avelinepicture.pl/portfolio.html">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0A0A0A">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Podgląd linku (Facebook, Instagram, Messenger, WhatsApp) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:site_name" content="Aveline Picture">
+    <meta property="og:url" content="https://avelinepicture.pl/portfolio.html">
+    <meta property="og:title" content="Portfolio — sesje zdjęciowe i reportaże | Aveline Picture">
+    <meta property="og:description" content="Portfolio Aveline Picture: sesje rodzinne, portretowe, ciążowe i narzeczeńskie oraz reportaże ze ślubów, chrztów i wydarzeń firmowych.">
+    <meta property="og:image" content="https://avelinepicture.pl/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Czcionki i style z własnego serwera (bez Google Fonts i CDN – szybciej i zgodnie z RODO) -->
+    <link rel="preload" href="fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/crimson-400.woff" as="font" type="font/woff" crossorigin>
+    <link rel="stylesheet" href="css/site.css?v=20261124">
+</head>
+<body class="bw-photos">
+
+    <!-- ===== NAGŁÓWEK ===== -->
+    <header class="header">
+        <div class="wrap">
+            <a href="index.html" class="logo" aria-label="Aveline Picture – strona główna">
+                <span class="logo-mark"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" aria-hidden="true"><path stroke-width="1.5" d="M3 9V5a2 2 0 0 1 2-2h4M23 3h4a2 2 0 0 1 2 2v4M29 23v4a2 2 0 0 1-2 2h-4M9 29H5a2 2 0 0 1-2-2v-4"/><path stroke-width="1.7" d="M10.2 23.5 16 8.5l5.8 15M12.4 18h7.2"/><circle cx="23.6" cy="8.4" r="1.6" fill="currentColor" stroke="none"/></svg></span>
+                <span class="logo-text"><strong>Aveline</strong><span>PICTURE</span></span>
+            </a>
+            <nav class="nav" aria-label="Nawigacja główna"><a href="index.html#portfolio" aria-current="page">Portfolio</a><a href="index.html#o-mnie">O mnie</a><a href="cennik.html">Cennik</a><a href="index.html#rezerwacja">Rezerwacja</a><a href="index.html#kontakt">Kontakt</a></nav>
+            <a href="index.html#rezerwacja" class="btn btn-primary header-cta">Zarezerwuj termin</a>
+            <button id="menu-btn" class="menu-btn" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="mobile-menu"><a href="index.html#portfolio">Portfolio</a><a href="index.html#o-mnie">O mnie</a><a href="cennik.html">Cennik</a><a href="index.html#rezerwacja">Rezerwacja</a><a href="index.html#kontakt">Kontakt</a><a href="index.html#rezerwacja" class="btn btn-primary btn-block">Zarezerwuj termin</a></div>
+    </header>
+
+    <main>
+    <section class="page-hero">
+        <div class="wrap">
+            <p class="eyebrow">Portfolio</p>
+            <h1 style="font-size:clamp(42px,6vw,76px)">Wybrane <em>kadry</em></h1>
+            <p class="lead">Kliknij zdjęcie, żeby je powiększyć. Strzałkami na klawiaturze przełączasz kolejne.</p>
+            <div class="filters"><a href="#sesje" class="chip">Sesje zdjęciowe</a><a href="#reportaze" class="chip">Reportaże</a></div>
+        </div>
+    </section>
+
+    <section id="sesje" class="gal-section">
+        <div class="wrap">
+            <div class="gal-head">
+                <div><p class="eyebrow">01 · Sesje zdjęciowe</p><h2>Sesje <em>zdjęciowe</em></h2></div>
+                <a href="cennik.html#sesje" class="link-arrow">Cennik sesji <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="filters" data-filter-group="gal-sesje" role="group" aria-label="Filtruj zdjęcia"><button class="chip active" type="button" data-filter="all" aria-pressed="true">Wszystkie</button><button class="chip" type="button" data-filter="rodzinne" aria-pressed="false">Rodzinne</button><button class="chip" type="button" data-filter="portretowe" aria-pressed="false">Portretowe</button><button class="chip" type="button" data-filter="ciazowe" aria-pressed="false">Ciążowe</button><button class="chip" type="button" data-filter="narzeczenskie" aria-pressed="false">Narzeczeńskie</button></div>
+            <div style="height:24px"></div>
+            <div class="gallery" id="gal-sesje">
+                <figure data-cat="rodzinne"><img src="img/sesje-01.jpg" alt="Sesja rodzinna w plenerze" width="1067" height="1600" loading="lazy"><figcaption>Sesja rodzinna w plenerze</figcaption></figure>
+                <figure data-cat="portretowe"><img src="img/sesje-02.jpg" alt="Portret kobiecy w studio" width="1600" height="1067" loading="lazy"><figcaption>Portret kobiecy w studio</figcaption></figure>
+                <figure data-cat="ciazowe"><img src="img/sesje-03.jpg" alt="Sesja ciążowa o zachodzie słońca" width="1067" height="1600" loading="lazy"><figcaption>Sesja ciążowa o zachodzie słońca</figcaption></figure>
+                <figure data-cat="narzeczenskie"><img src="img/sesje-04.jpg" alt="Sesja narzeczeńska w mieście" width="1600" height="1067" loading="lazy"><figcaption>Sesja narzeczeńska w mieście</figcaption></figure>
+                <figure data-cat="rodzinne"><img src="img/sesje-05.jpg" alt="Rodzina z dziećmi w domu" width="1067" height="1600" loading="lazy"><figcaption>Rodzina z dziećmi w domu</figcaption></figure>
+                <figure data-cat="portretowe"><img src="img/sesje-06.jpg" alt="Portret biznesowy" width="1600" height="1067" loading="lazy"><figcaption>Portret biznesowy</figcaption></figure>
+                <figure data-cat="ciazowe"><img src="img/sesje-07.jpg" alt="Sesja ciążowa w studio" width="1067" height="1600" loading="lazy"><figcaption>Sesja ciążowa w studio</figcaption></figure>
+                <figure data-cat="narzeczenskie"><img src="img/sesje-08.jpg" alt="Para na łące" width="1600" height="1067" loading="lazy"><figcaption>Para na łące</figcaption></figure>
+                <figure data-cat="portretowe"><img src="img/sesje-09.jpg" alt="Portret w naturalnym świetle" width="1067" height="1600" loading="lazy"><figcaption>Portret w naturalnym świetle</figcaption></figure>
+            </div>
+        </div>
+    </section>
+
+    <section id="reportaze" class="gal-section">
+        <div class="wrap">
+            <div class="gal-head">
+                <div><p class="eyebrow">02 · Reportaże</p><h2><em>Reportaże</em></h2></div>
+                <a href="cennik.html#reportaze" class="link-arrow">Cennik reportaży <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="filters" data-filter-group="gal-reportaze" role="group" aria-label="Filtruj zdjęcia"><button class="chip active" type="button" data-filter="all" aria-pressed="true">Wszystkie</button><button class="chip" type="button" data-filter="sluby" aria-pressed="false">Śluby</button><button class="chip" type="button" data-filter="chrzty" aria-pressed="false">Chrzty i komunie</button><button class="chip" type="button" data-filter="eventy" aria-pressed="false">Eventy firmowe</button><button class="chip" type="button" data-filter="okolicznosciowe" aria-pressed="false">Okolicznościowe</button></div>
+            <div style="height:24px"></div>
+            <div class="gallery" id="gal-reportaze">
+                <figure data-cat="sluby"><img src="img/reportaze-01.jpg" alt="Pierwszy taniec pary młodej" width="1600" height="1067" loading="lazy"><figcaption>Pierwszy taniec pary młodej</figcaption></figure>
+                <figure data-cat="chrzty"><img src="img/reportaze-02.jpg" alt="Chrzest – rodzina przed kościołem" width="1067" height="1600" loading="lazy"><figcaption>Chrzest – rodzina przed kościołem</figcaption></figure>
+                <figure data-cat="eventy"><img src="img/reportaze-03.jpg" alt="Konferencja firmowa" width="1600" height="1067" loading="lazy"><figcaption>Konferencja firmowa</figcaption></figure>
+                <figure data-cat="sluby"><img src="img/reportaze-04.jpg" alt="Przygotowania panny młodej" width="1600" height="1067" loading="lazy"><figcaption>Przygotowania panny młodej</figcaption></figure>
+                <figure data-cat="okolicznosciowe"><img src="img/reportaze-05.jpg" alt="Przyjęcie urodzinowe" width="1600" height="1067" loading="lazy"><figcaption>Przyjęcie urodzinowe</figcaption></figure>
+                <figure data-cat="eventy"><img src="img/reportaze-06.jpg" alt="Gala i wręczenie nagród" width="1600" height="1067" loading="lazy"><figcaption>Gala i wręczenie nagród</figcaption></figure>
+                <figure data-cat="sluby"><img src="img/reportaze-07.jpg" alt="Ceremonia ślubna w plenerze" width="1067" height="1600" loading="lazy"><figcaption>Ceremonia ślubna w plenerze</figcaption></figure>
+                <figure data-cat="chrzty"><img src="img/reportaze-08.jpg" alt="Komunia – pamiątkowe zdjęcie" width="1067" height="1600" loading="lazy"><figcaption>Komunia – pamiątkowe zdjęcie</figcaption></figure>
+                <figure data-cat="okolicznosciowe"><img src="img/reportaze-09.jpg" alt="Osiemnastka – zabawa" width="1067" height="1600" loading="lazy"><figcaption>Osiemnastka – zabawa</figcaption></figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-band">
+        <div class="wrap">
+            <p class="eyebrow">Podoba Ci się?</p>
+            <h2>Zarezerwuj <em>swoją</em> sesję</h2>
+            <div class="hero-actions"><a href="index.html#rezerwacja" class="btn btn-primary">Sprawdź wolne terminy</a><a href="cennik.html" class="btn btn-ghost">Zobacz cennik</a></div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Powiększanie zdjęć -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia">
+        <button class="lb-btn lb-close" type="button" aria-label="Zamknij">✕</button>
+        <button class="lb-btn lb-prev" type="button" aria-label="Poprzednie zdjęcie">←</button>
+        <img src="" alt="">
+        <button class="lb-btn lb-next" type="button" aria-label="Następne zdjęcie">→</button>
+        <p class="cap"></p>
+    </div>
+
+    <!-- ===== INSTAGRAM ===== -->
+    <section class="insta">
+        <div class="wrap insta-head">
+            <p class="eyebrow">Instagram</p>
+            <a href="https://instagram.com/avelinepicture" target="_blank" rel="noopener" class="link-arrow">@avelinepicture <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="insta-grid"><a href="https://instagram.com/avelinepicture" target="_blank" rel="noopener" aria-label="Zobacz na Instagramie"><img src="img/sesje-03.jpg" alt="" width="1067" height="1600" loading="lazy"></a><a href="https://instagram.com/avelinepicture" target="_blank" rel="noopener" aria-label="Zobacz na Instagramie"><img src="img/reportaze-02.jpg" alt="" width="1067" height="1600" loading="lazy"></a><a href="https://instagram.com/avelinepicture" target="_blank" rel="noopener" aria-label="Zobacz na Instagramie"><img src="img/sesje-06.jpg" alt="" width="1600" height="1067" loading="lazy"></a><a href="https://instagram.com/avelinepicture" target="_blank" rel="noopener" aria-label="Zobacz na Instagramie"><img src="img/reportaze-07.jpg" alt="" width="1067" height="1600" loading="lazy"></a><a href="https://instagram.com/avelinepicture" target="_blank" rel="noopener" aria-label="Zobacz na Instagramie"><img src="img/sesje-09.jpg" alt="" width="1067" height="1600" loading="lazy"></a><a href="https://instagram.com/avelinepicture" target="_blank" rel="noopener" aria-label="Zobacz na Instagramie"><img src="img/reportaze-05.jpg" alt="" width="1600" height="1067" loading="lazy"></a></div>
+    </section>
+
+    <!-- ===== STOPKA ===== -->
+    <footer class="footer">
+        <div class="wrap">
+            <div class="footer-top">
+                <div>
+                    <a href="index.html" class="logo"><span class="logo-mark"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" aria-hidden="true"><path stroke-width="1.5" d="M3 9V5a2 2 0 0 1 2-2h4M23 3h4a2 2 0 0 1 2 2v4M29 23v4a2 2 0 0 1-2 2h-4M9 29H5a2 2 0 0 1-2-2v-4"/><path stroke-width="1.7" d="M10.2 23.5 16 8.5l5.8 15M12.4 18h7.2"/><circle cx="23.6" cy="8.4" r="1.6" fill="currentColor" stroke="none"/></svg></span><span class="logo-text"><strong>Aveline</strong><span>PICTURE</span></span></a>
+                    <p style="max-width:360px;margin:14px 0 0" data-edit="stopka.opis">Fotografia portretowa, rodzinna i reportażowa. Naturalne kadry, prawdziwe emocje.</p>
+                </div>
+                <nav aria-label="Linki w stopce">
+                    <a href="portfolio.html#sesje">Sesje zdjęciowe</a>
+                    <a href="portfolio.html#reportaze">Reportaże</a>
+                    <a href="index.html#o-mnie">O mnie</a>
+                    <a href="cennik.html">Cennik</a>
+                    <a href="index.html#rezerwacja">Rezerwacja</a>
+                    <a href="index.html#kontakt">Kontakt</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <span>© <span data-year>2026</span> Aveline Picture · <a href="mailto:kontakt@avelinepicture.pl">kontakt@avelinepicture.pl</a></span>
+                <span><a href="polityka-prywatnosci.html">Polityka prywatności</a> · <a href="https://instagram.com/avelinepicture" rel="noopener" target="_blank">Instagram</a></span>
+                <span class="credit">Projekt i wykonanie: <a href="https://d3site.pl/" target="_blank" rel="noopener">d3site.pl</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/site.js?v=20261124" defer></script>
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aveline Picture — fotograf: sesje zdjęciowe i reportaże</title>
+    <meta name="description" content="Aveline Picture – sesje rodzinne, portretowe, ciążowe i narzeczeńskie oraz reportaże ślubne i okolicznościowe. Sprawdź wolne terminy i zarezerwuj online.">
+    <link rel="canonical" href="https://avelinepicture.pl/">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0A0A0A">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Podgląd linku (Facebook, Instagram, Messenger, WhatsApp) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:site_name" content="Aveline Picture">
+    <meta property="og:url" content="https://avelinepicture.pl/">
+    <meta property="og:title" content="Aveline Picture — fotograf: sesje zdjęciowe i reportaże">
+    <meta property="og:description" content="Aveline Picture – sesje rodzinne, portretowe, ciążowe i narzeczeńskie oraz reportaże ślubne i okolicznościowe. Sprawdź wolne terminy i zarezerwuj online.">
+    <meta property="og:image" content="https://avelinepicture.pl/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Czcionki i style z własnego serwera (bez Google Fonts i CDN – szybciej i zgodnie z RODO) -->
+    <link rel="preload" href="fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/crimson-400.woff" as="font" type="font/woff" crossorigin>
+    <link rel="stylesheet" href="css/site.css?v=20261124">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Aveline Picture",
+      "description": "Fotograf – sesje zdjęciowe (rodzinne, portretowe, ciążowe, narzeczeńskie) oraz reportaże ślubne i okolicznościowe.",
+      "url": "https://avelinepicture.pl/",
+      "image": "https://avelinepicture.pl/img/og-image.jpg",
+      "email": "kontakt@avelinepicture.pl",
+      "telephone": "+48 000 000 000",
+      "priceRange": "od 450 zł",
+      "sameAs": ["https://instagram.com/avelinepicture"]
+    }
+    </script>
+</head>
+<body class="bw-photos">
+
+    <!-- ===== NAGŁÓWEK ===== -->
+    <header class="header">
+        <div class="wrap">
+            <a href="index.html" class="logo" aria-label="Aveline Picture – strona główna">
+                <span class="logo-mark"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" aria-hidden="true"><path stroke-width="1.5" d="M3 9V5a2 2 0 0 1 2-2h4M23 3h4a2 2 0 0 1 2 2v4M29 23v4a2 2 0 0 1-2 2h-4M9 29H5a2 2 0 0 1-2-2v-4"/><path stroke-width="1.7" d="M10.2 23.5 16 8.5l5.8 15M12.4 18h7.2"/><circle cx="23.6" cy="8.4" r="1.6" fill="currentColor" stroke="none"/></svg></span>
+                <span class="logo-text"><strong>Aveline</strong><span>PICTURE</span></span>
+            </a>
+            <nav class="nav" aria-label="Nawigacja główna"><a href="index.html#portfolio">Portfolio</a><a href="index.html#o-mnie">O mnie</a><a href="cennik.html">Cennik</a><a href="index.html#rezerwacja">Rezerwacja</a><a href="index.html#kontakt">Kontakt</a></nav>
+            <a href="index.html#rezerwacja" class="btn btn-primary header-cta">Zarezerwuj termin</a>
+            <button id="menu-btn" class="menu-btn" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="mobile-menu"><a href="index.html#portfolio">Portfolio</a><a href="index.html#o-mnie">O mnie</a><a href="cennik.html">Cennik</a><a href="index.html#rezerwacja">Rezerwacja</a><a href="index.html#kontakt">Kontakt</a><a href="index.html#rezerwacja" class="btn btn-primary btn-block">Zarezerwuj termin</a></div>
+    </header>
+
+    <main>
+    <!-- ===== 1. HERO ===== -->
+    <section class="hero">
+        <div class="hero-img" id="hero-slides">
+            <img src="img/hero.jpg" alt="Aveline Picture – zdjęcie główne" width="2000" height="1200" class="slide active" fetchpriority="high">
+            <img src="img/hero-2.jpg" alt="Aveline Picture – kadr z sesji" width="2000" height="1200" loading="lazy" class="slide">
+            <img src="img/hero-3.jpg" alt="Aveline Picture – kadr z reportażu" width="2000" height="1200" loading="lazy" class="slide">
+        </div>
+        <div class="hero-counter" aria-hidden="true"><span id="slide-no">01</span> / 03</div>
+        <div class="wrap">
+            <p class="eyebrow" data-edit="hero.nadtytul"><b>●</b> Fotografia · sesje i reportaże</p>
+            <h1 data-edit="hero.tytul">Zdjęcia, do których<br>chce się <em>wracać</em></h1>
+            <p class="lead" data-edit="hero.opis">Fotografuję ludzi i ich historie: naturalnie, bez sztywnego pozowania. Sesje rodzinne, portretowe i reportaże z najważniejszych dni.</p>
+            <div class="hero-actions">
+                <a href="#rezerwacja" class="btn btn-primary">Sprawdź wolne terminy</a>
+                <a href="portfolio.html" class="btn btn-ghost">Zobacz portfolio</a>
+            </div>
+            <div class="hero-meta" data-edit="hero.atuty"><span>Galeria online w 14 dni</span><span>Pełna obróbka zdjęć</span><span>Plener, studio lub dom</span></div>
+        </div>
+    </section>
+
+    <!-- ===== MANIFEST ===== -->
+    <section class="manifest">
+        <div class="wrap">
+            <p class="manifest-text reveal" data-edit="manifest.tekst">Nie ustawiam ludzi do zdjęć. <em>Czekam</em> na moment, w którym przestają pozować – i wtedy naciskam spust migawki.</p>
+        </div>
+    </section>
+
+    <!-- ===== 2. PORTFOLIO ===== -->
+    <section id="portfolio" class="section">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <p class="eyebrow">Portfolio</p>
+                <h2>Dwa sposoby <em>opowiadania</em> historii</h2>
+                <p class="lead">Sesja to spokojny czas tylko dla Was. Reportaż to cichy udział w Waszym wydarzeniu: łapię emocje, zanim znikną.</p>
+            </div>
+            <div class="cat-grid">
+                <a href="portfolio.html#sesje" class="cat-card reveal">
+                    <img src="img/kafel-sesje.jpg" alt="Sesje zdjęciowe" width="1200" height="1500" loading="lazy">
+                    <div class="cat-body">
+                        <p class="eyebrow">01 · Sesje zdjęciowe</p>
+                        <h3>Sesje zdjęciowe</h3>
+                        <p data-edit="portfolio.sesje">Rodzinne, portretowe, ciążowe i narzeczeńskie. W plenerze, w studio albo u Was w domu.</p>
+                        <span class="link-arrow">Zobacz galerię <span aria-hidden="true">→</span></span>
+                    </div>
+                </a>
+                <a href="portfolio.html#reportaze" class="cat-card reveal">
+                    <img src="img/kafel-reportaze.jpg" alt="Reportaże" width="1200" height="1500" loading="lazy">
+                    <div class="cat-body">
+                        <p class="eyebrow">02 · Reportaże</p>
+                        <h3>Reportaże</h3>
+                        <p data-edit="portfolio.reportaze">Śluby, chrzty, komunie, urodziny i wydarzenia firmowe – od przygotowań po ostatni taniec.</p>
+                        <span class="link-arrow">Zobacz galerię <span aria-hidden="true">→</span></span>
+                    </div>
+                </a>
+            </div>
+            <div class="strip reveal"><a href="portfolio.html#sesje"><img src="img/sesje-02.jpg" alt="Zdjęcie z portfolio" width="1600" height="1067" loading="lazy"></a><a href="portfolio.html#reportaze"><img src="img/reportaze-01.jpg" alt="Zdjęcie z portfolio" width="1600" height="1067" loading="lazy"></a><a href="portfolio.html#sesje"><img src="img/sesje-05.jpg" alt="Zdjęcie z portfolio" width="1067" height="1600" loading="lazy"></a><a href="portfolio.html#reportaze"><img src="img/reportaze-06.jpg" alt="Zdjęcie z portfolio" width="1600" height="1067" loading="lazy"></a><a href="portfolio.html#sesje"><img src="img/sesje-08.jpg" alt="Zdjęcie z portfolio" width="1600" height="1067" loading="lazy"></a><a href="portfolio.html#reportaze"><img src="img/reportaze-04.jpg" alt="Zdjęcie z portfolio" width="1600" height="1067" loading="lazy"></a></div>
+        </div>
+    </section>
+
+    <!-- ===== OPINIE =====
+         Wklej tu PRAWDZIWE opinie klientów (np. z Google lub Facebooka, za ich zgodą).
+         Nie publikuj wymyślonych opinii – to niezgodne z prawem konsumenckim. -->
+    <section id="opinie" class="section">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <p class="eyebrow">Opinie</p>
+                <h2>Co mówią <em>klienci</em></h2>
+            </div>
+            <div class="quotes reveal" data-edit="opinie.lista">
+                <figure class="quote"><blockquote>Miejsce na opinię klienta. Wklej tu prawdziwą recenzję – najlepiej 2–3 zdania o atmosferze sesji i o zdjęciach.</blockquote><figcaption><strong>Imię klienta</strong><span>Sesja rodzinna</span></figcaption></figure>
+                <figure class="quote"><blockquote>Miejsce na opinię klienta. Krótkie, konkretne opinie działają najlepiej – np. co zaskoczyło klienta pozytywnie.</blockquote><figcaption><strong>Imię klienta</strong><span>Reportaż ślubny</span></figcaption></figure>
+                <figure class="quote"><blockquote>Miejsce na opinię klienta. Możesz dodać więcej kart, kopiując cały element &lt;figure&gt;.</blockquote><figcaption><strong>Imię klienta</strong><span>Sesja ciążowa</span></figcaption></figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 3. O MNIE ===== -->
+    <section id="o-mnie" class="section alt">
+        <div class="wrap about">
+            <div class="about-photo reveal">
+                <img src="img/o-mnie.jpg" alt="Portret fotografki Aveline Picture" width="1067" height="1400" loading="lazy">
+                <span class="tag">● za obiektywem</span>
+            </div>
+            <div class="reveal">
+                <p class="eyebrow">O mnie</p>
+                <h2>Cześć, tu <em>Aveline</em></h2>
+                <div data-edit="o-mnie.tekst">
+                    <p style="margin-top:22px">Fotografia to dla mnie sposób na zatrzymanie chwil, które na co dzień umykają: spojrzenia, śmiechu, dłoni splecionych w ważnym momencie. Nie każę nikomu „ładnie się uśmiechać” – podpowiadam, rozmawiam i pozwalam, żeby działo się to, co prawdziwe.</p>
+                    <p>Pracuję w naturalnym świetle, w plenerze i w domach moich klientów. Na reportażach jestem dyskretna, a na sesjach dbam o to, żebyście czuli się swobodnie – nawet jeśli to Wasz pierwszy raz przed obiektywem.</p>
+                </div>
+                <div class="values">
+                    <div class="value"><strong>Naturalne kadry</strong><span>Zero sztywnego pozowania, dużo prawdziwych emocji.</span></div>
+                    <div class="value"><strong>Spokojna atmosfera</strong><span>Prowadzę Was przez całą sesję krok po kroku.</span></div>
+                    <div class="value"><strong>Galeria online</strong><span>Gotowe zdjęcia w prywatnej galerii do pobrania.</span></div>
+                </div>
+                <p class="signature">Aveline</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 4. JAK TO WYGLĄDA ===== -->
+    <section class="section">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <p class="eyebrow">Jak to wygląda</p>
+                <h2>Od rezerwacji do <em>gotowych zdjęć</em></h2>
+            </div>
+            <div class="steps reveal">
+                <div class="step"><h3>Rezerwacja</h3><p>Wybierasz wolny termin w kalendarzu. Zajęty termin od razu znika – nikt inny go nie zarezerwuje.</p></div>
+                <div class="step"><h3>Rozmowa</h3><p>Ustalamy miejsce, stylizacje i pomysły. Dostajesz ode mnie krótki poradnik przed sesją.</p></div>
+                <div class="step"><h3>Sesja</h3><p>Spokojnie, bez pośpiechu. Podpowiadam, jak stanąć i co zrobić z rękami.</p></div>
+                <div class="step"><h3>Galeria</h3><p>Wybrane i obrobione zdjęcia trafiają do Twojej prywatnej galerii online.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 5. CENNIK (skrót) ===== -->
+    <section id="cennik" class="section alt">
+        <div class="wrap">
+            <div class="section-head center reveal">
+                <p class="eyebrow">Cennik</p>
+                <h2>Wybierz <em>swój</em> pakiet</h2>
+                <p class="lead">Ceny startowe najczęściej wybieranych pakietów. Szczegóły i dodatki znajdziesz w pełnym cenniku.</p>
+            </div>
+            <div class="price-grid">
+                <div class="price-card reveal">
+                    <h3>Sesja portretowa</h3>
+                    <p class="desc">Dla jednej osoby – portret, wizerunek, sesja kobieca.</p>
+                    <div class="price"><span class="from">cena od</span><span class="amount" data-edit="cennik.portret.cena">450 zł</span></div>
+                    <ul class="list">
+                        <li>Do 1 godziny zdjęć</li>
+                        <li>15 obrobionych zdjęć</li>
+                        <li>Plener lub studio</li>
+                        <li>Galeria online w 14 dni</li>
+                    </ul>
+                    <a href="#rezerwacja" class="btn btn-ghost btn-block" data-package="Sesja portretowa">Zarezerwuj termin</a>
+                </div>
+                <div class="price-card featured reveal">
+                    <div class="price-top"><h3>Sesja rodzinna</h3><span class="badge">Polecana</span></div>
+                    <p class="desc">Rodzinna, ciążowa lub narzeczeńska – dla 2 i więcej osób.</p>
+                    <div class="price"><span class="from">cena od</span><span class="amount" data-edit="cennik.rodzinna.cena">650 zł</span></div>
+                    <ul class="list">
+                        <li>Do 1,5 godziny zdjęć</li>
+                        <li>30 obrobionych zdjęć</li>
+                        <li>Plener, studio lub Wasz dom</li>
+                        <li>Poradnik: stylizacje i miejsce</li>
+                    </ul>
+                    <a href="#rezerwacja" class="btn btn-primary btn-block" data-package="Sesja rodzinna">Zarezerwuj termin</a>
+                </div>
+                <div class="price-card reveal">
+                    <h3>Reportaż</h3>
+                    <p class="desc">Ślub, chrzest, komunia, urodziny lub wydarzenie firmowe.</p>
+                    <div class="price"><span class="from">cena od</span><span class="amount" data-edit="cennik.reportaz.cena">1 200 zł</span></div>
+                    <ul class="list">
+                        <li>Od 3 godzin reportażu</li>
+                        <li>Wszystkie udane zdjęcia z obróbką</li>
+                        <li>Dojazd do 30 km w cenie</li>
+                        <li>Galeria online do pobrania</li>
+                    </ul>
+                    <a href="#kontakt" class="btn btn-ghost btn-block" data-package="Reportaż">Zapytaj o termin</a>
+                </div>
+            </div>
+            <div class="price-more reveal"><a href="cennik.html" class="link-arrow">Zobacz cały cennik <span aria-hidden="true">→</span></a></div>
+            <p class="price-note">Ceny brutto w PLN.</p>
+        </div>
+    </section>
+
+    <!-- ===== 6. REZERWACJA (Kalendarz Google) ===== -->
+    <section id="rezerwacja" class="section">
+        <div class="wrap booking">
+            <div class="booking-info reveal">
+                <p class="eyebrow">Rezerwacja</p>
+                <h2>Wybierz <em>wolny</em> termin</h2>
+                <p class="lead">Kalendarz pokazuje tylko wolne godziny. Po rezerwacji termin od razu znika – nikt inny go już nie zajmie.</p>
+                <ul class="list">
+                    <li>Dostajesz zaproszenie do kalendarza na swój e-mail</li>
+                    <li>Sesja trwa do 1,5 h – dojazd planuję sama</li>
+                    <li>Zmiana terminu? Napisz – przełożę bez kosztów</li>
+                </ul>
+                <div class="alert"><strong>Reportaż ślubny lub event?</strong> Takie terminy rezerwuję po krótkiej rozmowie – <a href="#kontakt" style="color:var(--brand-light)">napisz do mnie</a> z datą i miejscem.
+                    <span class="seats" data-edit="rezerwacja.limit">W sezonie biorę tylko <b>12</b> ślubów. Na 2027 rok zostało <b>7</b> wolnych dat.</span></div>
+            </div>
+            <!-- Własny kalendarz rezerwacji. Adres skryptu Google (…/exec) wklej w data-api-url.
+                 Puste data-api-url = tryb demonstracyjny (przykładowe terminy, nic się nie zapisuje). -->
+            <div id="booker" class="booker reveal" data-api-url="" aria-live="polite">
+                <div class="bk-cal">
+                    <div class="bk-head">
+                        <button type="button" class="bk-nav" id="bk-prev" aria-label="Poprzedni miesiąc">←</button>
+                        <h3 id="bk-month">Kalendarz</h3>
+                        <button type="button" class="bk-nav" id="bk-next" aria-label="Następny miesiąc">→</button>
+                    </div>
+                    <div class="bk-week" aria-hidden="true"><span>pn</span><span>wt</span><span>śr</span><span>cz</span><span>pt</span><span>sb</span><span>nd</span></div>
+                    <div class="bk-grid" id="bk-grid"><p class="bk-loading">Wczytuję wolne terminy…</p></div>
+                    <div class="bk-legend"><span><i class="lg-free"></i>wolny termin</span><span><i class="lg-none"></i>brak terminów</span></div>
+                </div>
+                <div class="bk-side">
+                    <div id="bk-slots" class="bk-step">
+                        <p class="eyebrow">Krok 1</p>
+                        <h3>Wybierz dzień</h3>
+                        <p class="muted small">Dni z wolnymi terminami są podświetlone. Po wybraniu dnia zobaczysz dostępne godziny.</p>
+                    </div>
+                    <form id="bk-form" class="bk-step" hidden novalidate>
+                        <p class="eyebrow">Krok 3</p>
+                        <div class="bk-chosen"><span id="bk-chosen-text"></span><button type="button" id="bk-change" class="bk-link">zmień</button></div>
+                        <div class="field"><label for="bk-name">Imię i nazwisko</label><input id="bk-name" name="name" required autocomplete="name"></div>
+                        <div class="row two">
+                            <div class="field"><label for="bk-email">E-mail</label><input id="bk-email" name="email" type="email" required autocomplete="email"></div>
+                            <div class="field"><label for="bk-phone">Telefon</label><input id="bk-phone" name="phone" type="tel" autocomplete="tel"></div>
+                        </div>
+                        <div class="field"><label for="bk-type">Rodzaj sesji</label>
+                            <select id="bk-type" name="type"><option>Sesja portretowa</option><option selected>Sesja rodzinna</option><option>Sesja ciążowa</option><option>Sesja narzeczeńska</option><option>Sesja biznesowa</option><option>Mini sesja</option></select>
+                        </div>
+                        <div class="field"><label for="bk-place">Miejsce sesji</label><input id="bk-place" name="place" placeholder="np. park, Wasz dom, studio – miejscowość"></div>
+                        <div class="field"><label for="bk-msg">Wiadomość (opcjonalnie)</label><textarea id="bk-msg" name="message" rows="3" style="min-height:80px"></textarea></div>
+                        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+                        <label class="check"><input type="checkbox" name="consent" required> <span>Zgadzam się na przetwarzanie danych w celu rezerwacji. <a href="polityka-prywatnosci.html">Polityka prywatności</a>.</span></label>
+                        <button type="submit" class="btn btn-primary btn-block">Rezerwuję termin</button>
+                        <p id="bk-msg-out" class="form-msg" role="status"></p>
+                    </form>
+                    <div id="bk-done" class="bk-step bk-done" hidden>
+                        <div class="bk-check" aria-hidden="true">✓</div>
+                        <h3>Termin zarezerwowany</h3>
+                        <p id="bk-done-text" class="muted"></p>
+                        <button type="button" id="bk-again" class="btn btn-ghost" style="margin-top:12px">Zarezerwuj kolejny termin</button>
+                    </div>
+                    <p id="bk-demo" class="bk-demo" hidden>Tryb demonstracyjny – przykładowe terminy, rezerwacja niczego nie zapisuje.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 7. KONTAKT ===== -->
+    <section id="kontakt" class="section alt">
+        <div class="wrap contact">
+            <div class="reveal">
+                <p class="eyebrow">Kontakt</p>
+                <h2>Porozmawiajmy o <em>Twoich</em> zdjęciach</h2>
+                <p class="lead">Napisz kilka słów o tym, czego szukasz. Odpowiadam zwykle w ciągu jednego dnia.</p>
+                <div class="contact-items">
+                    <a class="contact-item" href="mailto:kontakt@avelinepicture.pl"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg></span><div><small>E-mail</small><span data-edit="kontakt.email">kontakt@avelinepicture.pl</span></div></a>
+                    <a class="contact-item" href="tel:+48000000000"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 3.5h3.2l1.6 4.3-2 1.4a11 11 0 0 0 7 7l1.4-2 4.3 1.6V19a1.5 1.5 0 0 1-1.6 1.5A16.5 16.5 0 0 1 3.5 5.1 1.5 1.5 0 0 1 5 3.5Z"/></svg></span><div><small>Telefon</small><span data-edit="kontakt.telefon">+48 000 000 000</span></div></a>
+                    <a class="contact-item" href="https://instagram.com/avelinepicture" target="_blank" rel="noopener"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".8" fill="currentColor"/></svg></span><div><small>Instagram</small><span>@avelinepicture</span></div></a>
+                    <div class="contact-item"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><small>Obszar działania</small><span data-edit="kontakt.obszar">Lokalnie i w całej Polsce</span></div></div>
+                </div>
+            </div>
+            <form id="contact-form" class="card reveal" action="send.php" method="post" novalidate>
+                <div class="row two">
+                    <div class="field"><label for="f-name">Imię</label><input id="f-name" name="name" required autocomplete="name"></div>
+                    <div class="field"><label for="f-email">E-mail</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+                </div>
+                <div class="row two">
+                    <div class="field"><label for="f-type">Rodzaj zlecenia</label>
+                        <select id="f-type" name="type">
+                            <option>Sesja portretowa</option><option>Sesja rodzinna</option><option>Sesja ciążowa</option><option>Sesja narzeczeńska</option>
+                            <option>Reportaż</option><option>Reportaż ślubny</option><option>Event firmowy</option><option>Inne</option>
+                        </select>
+                    </div>
+                    <div class="field"><label for="f-date">Planowana data (opcjonalnie)</label><input id="f-date" name="date" type="date"></div>
+                </div>
+                <div class="field"><label for="f-msg">Wiadomość</label><textarea id="f-msg" name="message" required placeholder="Np. sesja rodzinna w plenerze, 2 dorosłych i 2 dzieci, okolice wiosny…"></textarea></div>
+                <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+                <label class="check"><input type="checkbox" name="consent" required> <span>Wyrażam zgodę na przetwarzanie moich danych w celu odpowiedzi na wiadomość. Więcej w <a href="polityka-prywatnosci.html">polityce prywatności</a>.</span></label>
+                <button type="submit" class="btn btn-primary btn-block">Wyślij wiadomość</button>
+                <p id="form-msg" class="form-msg" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+    </main>
+
+    <!-- ===== INSTAGRAM ===== -->
+    <section class="insta">
+        <div class="wrap insta-head">
+            <p class="eyebrow">Instagram</p>
+            <a href="https://instagram.com/avelinepicture" target="_blank" rel="noopener" class="link-arrow">@avelinepicture <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="insta-grid"><a href="https://instagram.com/avelinepicture" target="_blank" rel="noopener" aria-label="Zobacz na Instagramie"><img src="img/sesje-03.jpg" alt="" width="1067" height="1600" loading="lazy"></a><a href="https://instagram.com/avelinepicture" target="_blank" rel="noopener" aria-label="Zobacz na Instagramie"><img src="img/reportaze-02.jpg" alt="" width="1067" height="1600" loading="lazy"></a><a href="https://instagram.com/avelinepicture" target="_blank" rel="noopener" aria-label="Zobacz na Instagramie"><img src="img/sesje-06.jpg" alt="" width="1600" height="1067" loading="lazy"></a><a href="https://instagram.com/avelinepicture" target="_blank" rel="noopener" aria-label="Zobacz na Instagramie"><img src="img/reportaze-07.jpg" alt="" width="1067" height="1600" loading="lazy"></a><a href="https://instagram.com/avelinepicture" target="_blank" rel="noopener" aria-label="Zobacz na Instagramie"><img src="img/sesje-09.jpg" alt="" width="1067" height="1600" loading="lazy"></a><a href="https://instagram.com/avelinepicture" target="_blank" rel="noopener" aria-label="Zobacz na Instagramie"><img src="img/reportaze-05.jpg" alt="" width="1600" height="1067" loading="lazy"></a></div>
+    </section>
+
+    <!-- ===== STOPKA ===== -->
+    <footer class="footer">
+        <div class="wrap">
+            <div class="footer-top">
+                <div>
+                    <a href="index.html" class="logo"><span class="logo-mark"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-linecap="round" aria-hidden="true"><path stroke-width="1.5" d="M3 9V5a2 2 0 0 1 2-2h4M23 3h4a2 2 0 0 1 2 2v4M29 23v4a2 2 0 0 1-2 2h-4M9 29H5a2 2 0 0 1-2-2v-4"/><path stroke-width="1.7" d="M10.2 23.5 16 8.5l5.8 15M12.4 18h7.2"/><circle cx="23.6" cy="8.4" r="1.6" fill="currentColor" stroke="none"/></svg></span><span class="logo-text"><strong>Aveline</strong><span>PICTURE</span></span></a>
+                    <p style="max-width:360px;margin:14px 0 0" data-edit="stopka.opis">Fotografia portretowa, rodzinna i reportażowa. Naturalne kadry, prawdziwe emocje.</p>
+                </div>
+                <nav aria-label="Linki w stopce">
+                    <a href="portfolio.html#sesje">Sesje zdjęciowe</a>
+                    <a href="portfolio.html#reportaze">Reportaże</a>
+                    <a href="index.html#o-mnie">O mnie</a>
+                    <a href="cennik.html">Cennik</a>
+                    <a href="index.html#rezerwacja">Rezerwacja</a>
+                    <a href="index.html#kontakt">Kontakt</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <span>© <span data-year>2026</span> Aveline Picture · <a href="mailto:kontakt@avelinepicture.pl">kontakt@avelinepicture.pl</a></span>
+                <span><a href="polityka-prywatnosci.html">Polityka prywatności</a> · <a href="https://instagram.com/avelinepicture" rel="noopener" target="_blank">Instagram</a></span>
+                <span class="credit">Projekt i wykonanie: <a href="https://d3site.pl/" target="_blank" rel="noopener">d3site.pl</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/site.js?v=20261124" defer></script>
+</body>
+</html>
